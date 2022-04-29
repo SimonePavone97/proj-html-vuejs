@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <h1 class="margin"> our most popular dishes</h1>
         <div class="row">
             <div class="col">

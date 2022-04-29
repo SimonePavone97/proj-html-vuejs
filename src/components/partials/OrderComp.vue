@@ -28,6 +28,6 @@
     .abso {
         background-color: white;
         padding: 20px 20px;
-        margin-top: 310px;
+        margin-top: 300px;
     }
 </style>
