@@ -3,6 +3,11 @@
     <div>
 
         <img class="img-fluid" src="../../assets/images/first-order-background-scaled.jpg" alt="">
+
+        <div class="container text-end mt-4">
+            <button type="button" class="btn btn-danger text-uppercase fw-bold my-5">start your order</button>
+
+        </div>
     </div>
 
 </template>
@@ -17,5 +22,6 @@
 
 
 <style scoped lang="scss">
+
 
 </style>
