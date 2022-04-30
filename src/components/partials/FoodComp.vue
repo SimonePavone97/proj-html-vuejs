@@ -20,7 +20,7 @@
 
         </div>
 
-        <button type="button" class="btn btn-danger text-uppercase fw-bold my-5">start your order</button>
+        <button type="button" class="btn btn-danger text-uppercase fw-bold my-5">start your order<i class="fa-solid fa-arrow-right ms-3"></i></button>
     </div>
 
 </template>

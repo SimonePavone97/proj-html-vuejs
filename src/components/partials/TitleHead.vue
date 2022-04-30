@@ -1,12 +1,16 @@
 <template>
 
-  <div class="padd">
+  <div class="padd text-white">
     <h3>Hungry?</h3>
-    <p class="text-capitalize fs-1">
-      <font color="#fcd66c">great food</font> <br> delivered <br>
-      <button type="button" class="btn btn-danger text-uppercase ">view our menu</button>
-    </p>
-    
+
+
+    <div>
+      <p class="text-capitalize  fs-1">
+        <font color="#fcd66c">great food</font> <br> delivered <br>
+        <button type="button" class="btn btn-danger text-uppercase">view our menu <i class="fa-solid fa-arrow-right"></i></button>
+      </p>
+    </div>
+
   </div>
 
 </template>
@@ -23,6 +27,8 @@
 
 <style scoped lang="scss">
   .padd {
-    padding-top: 250px;
+    padding-top: 310px;
+    padding-bottom: 310px;
   }
+
 </style>

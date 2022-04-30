@@ -6,37 +6,45 @@
         </h2>
 
         <div class="row g-4">
-            <div class="col-3 menu">
+            <div class="col-3 menue">
+                <div class="overlay"></div>
                 <img class="img-fluid" src="../../assets/images/appetizers-menu-background.jpg" alt="">
-                <span class="center"> appetizers </span>
+                <span class="centere"> appetizers </span>
             </div>
-            <div class="col-3 menu">
+            <div class="col-3 menue">
+                <div class="overlay"></div>
                 <img class="img-fluid" src="../../assets/images/burgers-menu-background.jpg" alt="">
-                <span class="center"> burgers </span>
+                <span class="centere"> burgers </span>
             </div>
-            <div class="col-3 menu">
+            <div class="col-3 menue">
+                <div class="overlay"></div>
                 <img class="img-fluid" src="../../assets/images/pizza-menu-background.jpg" alt="">
-                <span class="center"> pizzas </span>
+                <span class="centere"> pizzas </span>
             </div>
-            <div class="col-3 menu">
+            <div class="col-3 menue">
+                <div class="overlay"></div>
                 <img class="img-fluid" src="../../assets/images/fries-menu-background.jpg" alt="">
-                <span class="center"> fries </span>
+                <span class="centere"> fries </span>
             </div>
-            <div class="col-3 menu">
-                <img class="img-fluid" src="../../assets/images/appetizers-menu-background.jpg" alt="">
-                <span class="center"> sides </span>
+            <div class="col-3 menue">
+                <div class="overlay"></div>
+                <img class="img-fluid" src="../../assets/images/sides-menu-background.jpg" alt="">
+                <span class="centere"> sides </span>
             </div>
-            <div class="col-3 menu">
-                <img class="img-fluid" src="../../assets/images/burgers-menu-background.jpg" alt="">
-                <span class="center"> desserts </span>
+            <div class="col-3 menue">
+                <div class="overlay"></div>
+                <img class="img-fluid" src="../../assets/images/desserts-menu-background.jpg" alt="">
+                <span class="centere"> desserts </span>
             </div>
-            <div class="col-3 menu">
-                <img class="img-fluid" src="../../assets/images/pizza-menu-background.jpg" alt="">
-                <span class="center"> beverages </span>
+            <div class="col-3 menue">
+                <div class="overlay"></div>
+                <img class="img-fluid" src="../../assets/images/beverages-menu-background.jpg" alt="">
+                <span class="centere"> beverages </span>
             </div>
-            <div class="col-3 menu">
-                <img class="img-fluid" src="../../assets/images/fries-menu-background.jpg" alt="">
-                <span class="center"> specials </span>
+            <div class="col-3 menue">
+                <div class="overlay"></div>
+                <img class="img-fluid" src="../../assets/images/specials-menu-background.jpg" alt="">
+                <span class="centere"> specials </span>
             </div>
         </div>
 
@@ -55,21 +63,28 @@
 
 
 <style scoped lang="scss">
+    .menue {
+        position: relative;
+    }
 
-.menu {
-  position: relative;
-}
+    .centere {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.7em;
+        color: #ffff;
+    }
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.7em;
-  color: #ffff;
-}
+    .overlay {
 
+        position: absolute;
+        top: 0;
+        left: 11px;
+        right: 12px;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+ 
 
-
-
+    }
 </style>
