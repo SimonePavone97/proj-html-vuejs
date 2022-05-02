@@ -22,7 +22,7 @@
 
 
 
-<style lang="scss">
+<style scoped lang="scss">
     a {
         color: #020201 !important;
     }
