@@ -1,18 +1,21 @@
 <template>
 
     <div>
-        <div class="text-capitalize text-center ">
+        <div class="text-center ">
             <FoodComp />
         </div>
         <div>
             <SalesComp />
         </div>
-        <div class="container text-capitalize">
+        <div class="container">
             <MenuComp/>
             <AllergiesComp/>
         </div>
         <div>
             <DownComp/>
+        </div>
+        <div>
+            <NewsComp/>
         </div>
 
 
@@ -27,6 +30,7 @@
     import MenuComp from '../components/partials/MenuComp.vue'
     import AllergiesComp from '../components/partials/AllergiesComp.vue'
     import DownComp from '../components/partials/DownComp.vue'
+    import NewsComp from '../components/partials/NewsComp.vue'
 
     export default {
         name: 'MainComp',
@@ -35,7 +39,8 @@
             SalesComp,
             MenuComp,
             AllergiesComp,
-            DownComp
+            DownComp,
+            NewsComp
         }
     }
 </script>
