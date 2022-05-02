@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#"><font color="#fcd66c">Home</font></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Order Online</a>

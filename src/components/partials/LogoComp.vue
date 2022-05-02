@@ -1,8 +1,10 @@
 <template>
+  
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/images/takeout-logo-2x-200x43.png" alt="logo_takeout">
+    </a>
 
-  <a class="navbar-brand" href="#">
-    <img src="../../assets/images/takeout-logo.png" alt="logo_takeout">
-  </a>
+
 
 </template>
 
