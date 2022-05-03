@@ -1,76 +1,34 @@
 <template>
 
-    <div class="container marg d-flex flex-column text-start">
+    <div class="container marg text-start">
         <div class="row space text-white">
-            <div class="col">
-                <h6>order online</h6>
+            <div class="col text-white">
                 <ul>
-                    <li class="pt-3">
-                        <a href="#">Appetizers</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Burger</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Pizza</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Fries</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Sides</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Dessert</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Beverages</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Specials</a>
+                    <li class="pb-2" v-for="(element, index) in menuForm1" :key="index">
+                        <h6>{{element.title}}</h6>
+                        <a :href="element.url"> {{element.list}} </a>
                     </li>
                 </ul>
             </div>
+
+
             <div class="col">
-                <h6>navigate</h6>
                 <ul>
-                    <li class="pt-3">
-                        <a href="#">
-                            <font color="#fcd66c">Home</font>
-                        </a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Alternate Home</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Menu</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">News</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Contact Us</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Cart</a>
+                    <li class="pb-2" v-for="(element, index) in menuNavigate" :key="index">
+                        <h6>{{element.title_2}}</h6>
+                        <a :href="element.url"> {{element.list}} </a>
+
                     </li>
 
                 </ul>
             </div>
             <div class="col">
-                <h6>information</h6>
+
                 <ul>
-                    <li class="pt-3">
-                        <a href="#">My Account</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Terms Of Service</a>
-                    </li>
-                    <li class="pt-3">
-                        <a href="#">Privacy Policy</a>
+                    <li class="pb-2" v-for="(element, index) in menuInformation" :key="index">
+                        <h6>{{element.title_3}}</h6>
+                        <a :href="element.url"> {{element.list}} </a>
+
                     </li>
                     <li class="pt-3">
                         <a href="#">
@@ -87,47 +45,31 @@
                 </ul>
             </div>
             <div class="col">
-                <h6>opening hours</h6>
+
                 <ul>
-                    <li class="pt-1">
-                        Mon - <font color="#fcd66c">10AM to 11PM</font>
+                    <li class="pb-2" v-for="(element, index) in menuHours" :key="index">
+                        <h6>{{element.title_4}}</h6>
+                        <span> {{element.date}} <font color="#fcd66c">{{element.hours}}</font></span>
                     </li>
-                    <li class="pt-1">
-                        Tue - <font color="#fcd66c">10AM to 11PM</font>
-                    </li>
-                    <li class="pt-1">
-                        Wed - <font color="#fcd66c">10AM to 11PM</font>
-                    </li>
-                    <li class="pt-1">
-                        Thur - <font color="#fcd66c">10AM to 11PM</font>
-                    </li>
-                    <li class="pt-1">
-                        Fri - <font color="#fcd66c">10AM to 11PM</font>
-                    </li>
-                    <li class="pt-1">
-                        Sat - <font color="#fcd66c">10AM to 1PM</font>
-                    </li>
-                    <li class="pt-1">
-                        Sun - <font color="#fcd66c">10AM to 11PM</font>
-                    </li>
+
                 </ul>
             </div>
             <div class="col text-center">
-                <h6>voucher</h6>
                 <ul>
-                    <li>
-                        <a href="#">
-                            <img class="img-fluid" src="../../assets/images/footer-coupon-200x200.png" alt="">
-                        </a> <br>
-                    </li>
-
-                    <li class="pt-3">
+                    <li v-for="(element, index) in menuVoucher" :key="index">
+                        <h6>{{element.title_5}}</h6>
+                        <img class="img-fluid" src="../../assets/images/footer-coupon-200x200.png" alt=""> <br>
                         <span>just use the code</span> <br>
                         <span>
-                            <font color="#fcd66c" class="text-uppercase fs-4">firstorder</font>
+                            <font color="#fcd66c" class="text-uppercase fs-4">{{element.sconto}}</font>
                         </span> <br>
                         <span>at checkout</span>
                     </li>
+
+                   
+
+
+                  
                 </ul>
             </div>
         </div>
@@ -140,6 +82,148 @@
 <script>
     export default {
         name: 'FormComp',
+        data() {
+            return {
+                menuForm1: [{
+                        title: 'order online',
+
+                    },
+                    {
+                        list: 'appetizers',
+                        url: '#',
+
+                    },
+                    {
+                        list: 'burger',
+                        url: '#',
+
+                    },
+                    {
+                        list: 'pizza',
+                        url: '#',
+                    },
+                    {
+                        list: 'fries',
+                        url: '#',
+                    },
+                    {
+                        list: 'sides',
+                        url: '#',
+                    },
+                    {
+                        list: 'desserts',
+                        url: '#',
+                    },
+                    {
+                        list: 'beverages',
+                        url: '#',
+                    },
+                    {
+                        list: 'specials',
+                        url: '#',
+                    },
+                ],
+                menuNavigate: [{
+                        title_2: 'Navigate',
+
+                    },
+                    {
+                        list: 'Home',
+                        url: '#',
+
+                    },
+                    {
+                        list: 'alternate home',
+                        url: '#',
+                    },
+                    {
+                        list: 'menu',
+                        url: '#',
+                    },
+                    {
+                        list: 'about',
+                        url: '#',
+                    },
+                    {
+                        list: 'news',
+                        url: '#',
+                    },
+                    {
+                        list: 'contact us',
+                        url: '#',
+                    },
+                    {
+                        list: 'cart',
+                        url: '#',
+                    },
+                ],
+                menuInformation: [{
+                        title_3: 'Information',
+
+                    },
+                    {
+                        list: 'my account',
+                        url: '#',
+
+                    },
+                    {
+                        list: 'term of service',
+                        url: '#',
+                    },
+                    {
+                        list: 'privacy policy',
+                        url: '#',
+                    },
+                ],
+                menuHours: [{
+                        title_4: 'opening hours',
+
+                    },
+                    {
+                        date: 'mon -',
+                        hours: '10AM to 11PM',
+                        url: '#',
+
+                    },
+                    {
+                        date: 'tue -',
+                        hours: '10AM to 11PM',
+                        url: '#',
+                    },
+                    {
+                        date: 'wed -',
+                        hours: '10AM to 11PM',
+                        url: '#',
+                    },
+                    {
+                        date: 'thur -',
+                        hours: '10AM to 11PM',
+                        url: '#',
+                    },
+                    {
+                        date: 'fri -',
+                        hours: '10AM to 11PM',
+                        url: '#',
+                    },
+                    {
+                        date: 'sat -',
+                        hours: '10AM to 1PM',
+                        url: '#',
+                    },
+                    {
+                        date: 'sun -',
+                        hours: '10AM to 11PM',
+                        url: '#',
+                    },
+                ],
+                menuVoucher: [{
+                        title_5: 'Voucher',
+                        sconto: 'FIRSTORDER',
+                    },
+
+                ]
+            }
+        }
     }
 </script>
 

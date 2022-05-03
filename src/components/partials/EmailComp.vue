@@ -3,7 +3,7 @@
     <div class="">
 
         <div class="pt-5">
-            <input type="email" class="form-control rounded-pill no-upper" id="exampleFormControlInput1" placeholder="you@email.com">
+            <input type="email" class="form-control rounded-pill no-upper text-dark"  placeholder="you@email.com">
         </div>
 
         <div class="d-grid pt-3">

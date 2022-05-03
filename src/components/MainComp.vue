@@ -1,7 +1,7 @@
 <template>
 
     <div>
-        <div class="text-center ">
+        <div class="text-center">
             <FoodComp />
         </div>
         <div>
